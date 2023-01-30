@@ -11,83 +11,109 @@
 
 <body>
     <p><i><strong>Para participar en nuestra entrevista online rellene los siguientes campos:</strong></i></p>
-    <div>
-        <form action="#" target="" method="get" name="formDatosPersonales">
-            <fieldset>
-                <legend><strong>Datos personales</strong></legend>
-                <label for="nombre">Nombre</label>
-                <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required />
-                <label for="apellidos">1º Apellido</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu primer apellido" required />
-                <label for="apellidos">2º Apellido</label>
-                <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu segundo apellido" required />
-                <br><br>
-                <label for="dni">DNI</label>
-                <input type="text" name="dni" id="dni" placeholder="Escribe tu DNI" required />
-                <label for="number">Número de teléfono</label>
-                <input type="text" name="number" id="number" placeholder="Escribe tu teléfono" required />
-                <label for="e-mail">E-mail</label>
-                <input type="text" name="e-mail" id="e-mail" placeholder="Escribe tu correo" required />
-
-                <br><br>
-                <label for="nombre">Género</label>
-                <input type="radio" name="gender" id="radio" required> <label for="gender">Mujer</label> <input
-                    type="radio" name="gender" id="gender" required> <label for="gender">Hormbre</label> <input
-                    type="radio" name="gender" id="gender" required><label for="radio">Otro</label>
-                <input type="text" name="gender" id="gender" placeholder="Escribe otro género" />
-                <br><br>
-                <label for="edad">Edad</label>
-                <input type="text" name="edad" id="edad" placeholder="Escribe tu edad" required />
-                <label for="altura">Altura</label>
-                <input type="text" name="altura" id="altura" placeholder="Escribe tu altura en cm" required />
-                <label for="peso">Peso</label>
-                <input type="text" name="peso" id="peso" placeholder="Escribe tu peso en kg" required />
-            </fieldset>
+    <p>Nombre de usuario:<input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required />
+    </p>
+    <p>Contraseña: <input type="password" name="clave"></p>
+    <form action="#" target="" method="get" name="formDatosPersonales">
+        <fieldset>
+            <legend><strong>Datos personales</strong></legend>
+            <label for="date">Fecha</label>
+            <input type="date" name="fecha" value="2023-01-30" />
+            <label for="time">Hora</label>
+            <input type="time" name="hora" value="11:30" />
             <br><br>
-            <fieldset>
-                <legend><strong>Relativo a su lugar de residencia</strong></legend>
-                <label for="país">País</label>
-                <input type="text" name="país" id="país" placeholder="Escribe tu país" required />
-                <br><br>
-                <label for="comaut">Comunidad Autónoma</label>
-                <input type="text" name="comaut" id="comaut" placeholder="Escribe tu comunidad autónoma" required />
-                <label for="prov">Provincia</label>
-                <input type="text" name="prov" id="prov" placeholder="Escribe tu provincia" required />
-                <br><br>
-                <label for="city">Ciudad</label>
-                <input type="text" name="city" id="city" placeholder="Escribe tu ciudad" required />
-                <label for="codpost">Código postal</label>
-                <input type="text" name="codpost" id="codpost" placeholder="Escribe tu código postal" required />
-                <br><br>
-                <label for="direc">Dirección</label>
-                <textarea name="direc" for="direc" placeholder="Escribe tu dirección" maxlength="50"
-                    required></textarea>
-            </fieldset>
+            <label for="nombre">Nombre</label>
+            <input type="text" name="nombre" id="nombre" placeholder="Escribe tu nombre" required />
+            <label for="apellidos">1º Apellido</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu primer apellido" required />
+            <label for="apellidos">2º Apellido</label>
+            <input type="text" name="apellidos" id="apellidos" placeholder="Escribe tu segundo apellido" required />
             <br><br>
-            <fieldset>
-                <legend><strong>Relativo a su CV</strong></legend>
-                <label for="studies">Habla sobre tus estudios</label>
-                <textarea name="studies" for="estudies" placeholder="Habla sobre tu formación" maxlength="300"
-                    required></textarea>
-                <label for="lang">¿Qué idiomas habla?</label>
-                <textarea name="lang" for="lang" placeholder="Indica los idiomas que hablas y el nivel de los dados"
-                    maxlength="300" required></textarea>
-                <br><br>
-                <label for="exp">Experiencia profesional</label>
-                <input type="radio" name="exp" id="radio" required> <label for="exp">No</label> <input type="radio"
-                    name="exp" id="exp" required> <label for="exp">Sí</label>
-                <textarea name="exp" for="exp" placeholder="Habla sobre tu experiencia profesional" maxlength="300"
-                    required></textarea>
-                <br><br>
-                <label for="habil">¿Qué cree que puede aportar a la empresa?</label>
-                <textarea name="habil" for="habil" placeholder="Escribe sobre tus habilidades" maxlength="300"
-                    required></textarea>
-            </fieldset>
+            <label for="dni">DNI</label>
+            <input type="text" name="dni" id="dni" placeholder="Escribe tu DNI" required />
+            <label for="number">Número de teléfono</label>
+            <input type="text" name="number" id="number" placeholder="Escribe tu teléfono" required />
+            <label for="e-mail">E-mail</label>
+            <input type="email" name="correo" placeholder="Escribe tu correo" required />
             <br><br>
-            <input type="submit" name="enviar" value="ENVIAR">
+            <label for="nombre">Género</label>
+            <input type="radio" name="gender" id="radio" required> <label for="gender">Mujer</label> <input type="radio"
+                name="gender" id="gender" required> <label for="gender">Hormbre</label> <input type="radio"
+                name="gender" id="gender" required><label for="radio">Otro</label>
+            <input type="text" name="gender" id="gender" placeholder="Escribe otro género" />
             <br><br>
-            <input type="reset" value="Restablecer todos los campos a su valor predeterminado" />
-        </form>
+            <label for="edad">Edad</label>
+            <input type="number" name="edad" step="1">
+            <label for="altura">Altura</label>
+            <input type="text" name="altura" id="altura" placeholder="Escribe tu altura en cm" required />
+            <label for="peso">Peso</label>
+            <input type="text" name="peso" id="peso" placeholder="Escribe tu peso en kg" required />
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><strong>Relativo a su lugar de residencia</strong></legend>
+            <label for="país">País</label>
+            <select name="pais">
+                <option value="es"> España</option>
+                <option value="mx" selected="selected"> México</option>
+                <option value="co"> Colombia</option>
+                <option value="fr"> Francia</option>
+                <option value="al"> Alemania</option>
+                <option value="ir"> Irlanda</option>
+                <option value="gb"> Gran Bretaña</option>
+                <option value="eu"> EEUU</option>
+            </select>
+            <br><br>
+            <label for="comaut">Comunidad Autónoma</label>
+            <input type="text" name="comaut" id="comaut" placeholder="Escribe tu comunidad autónoma" required />
+            <label for="prov">Provincia</label>
+            <input type="text" name="prov" id="prov" placeholder="Escribe tu provincia" required />
+            <br><br>
+            <label for="city">Ciudad</label>
+            <input type="text" name="city" id="city" placeholder="Escribe tu ciudad" required />
+            <label for="codpost">Código postal</label>
+            <input type="text" name="codpost" id="codpost" placeholder="Escribe tu código postal" required />
+            <br><br>
+            <label for="direc">Dirección</label>
+            <textarea name="direc" for="direc" placeholder="Escribe tu dirección" maxlength="50" required></textarea>
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend><strong>Relativo a su CV</strong></legend>
+            <label for="cv">Adjunte CV<input type="file" name="fichero" accept=".jpg, .jpeg, .png," /></label>
+            <br><br>
+            <label for="studies">Habla sobre tus estudios</label>
+            <textarea name="studies" for="estudies" placeholder="Habla sobre tu formación" maxlength="300"
+                required></textarea>
+            <label for="lang">¿Qué idiomas habla?</label>
+            <select multiple name="idiomas">
+                <option value="en"> Inglés</option>
+                <option value="al" selected="selected"> Alemán</option>
+                <option value="ch"> Chino</option>
+                <option value="fr"> Francés</option>
+                <option value="ar"> Árabe</option>
+            </select>
+            <textarea name="lang" for="lang" placeholder="Indica los idiomas que hablas y el nivel de los dados"
+                maxlength="300" required></textarea>
+            <br><br>
+            <label for="exp">Experiencia profesional</label>
+            <input type="radio" name="exp" id="radio" required> <label for="exp">No</label> <input type="radio"
+                name="exp" id="exp" required> <label for="exp">Sí</label>
+            <textarea name="exp" for="exp" placeholder="Habla sobre tu experiencia profesional" maxlength="300"
+                required></textarea>
+            <br><br>
+            <label for="habil">¿Qué cree que puede aportar a la empresa?</label>
+            <textarea name="habil" for="habil" placeholder="Escribe sobre tus habilidades" maxlength="300"
+                required></textarea>
+        </fieldset>
+        <br>
+        <p>Acepto condiciones de gestión de mis datos personales <input type="checkbox" value="acepta"
+                name="condiciones"></p>
+        <br><br>
+        <input type="submit" name="enviar" value="ENVIAR">
+        <br><br>
+        <input type="reset" value="Restablecer todos los campos a su valor predeterminado" />
+    </form>
 </body>
 
 </html>
